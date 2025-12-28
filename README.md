@@ -1,7 +1,7 @@
 # aws-study2
 # AWS Study Log
 
-高校生からクラウドエンジニアを目指して学習中です。
+高校生からクラウドエンジニアを目指して学習中。
 
 ## 目標
 - AWS Cloud Practitioner 合格
