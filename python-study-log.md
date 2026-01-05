@@ -45,7 +45,7 @@ print(f"{x} + {y} = {x + y}"）
 
 ## コード
 scores=[80,70,4732]  
-total=sum(socres)  
+total=sum(scores)  
 print(total)  
 total=sum(scores)/len(scores)  
 print(scores[-1])  
