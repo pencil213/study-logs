@@ -58,11 +58,11 @@ print(scores[1:3])
 - 
 ## コード
 # BMIを出力
-height = float(input("身長を入力してください(cm): "))
-weight = float(input("体重を入力してください(kg): "))
+height = float(input("身長を入力してください(cm): "))  
+weight = float(input("体重を入力してください(kg): "))  
 
-height = height / 100  # cm → m
-BMI = weight / (height * height)
+height = height / 100  # cm → m  
+BMI = weight / (height * height)  
 
 print(BMI)
 
