@@ -57,11 +57,11 @@ print(scores[1:3])
 リストは添字をpythonが自動につけるが、ディクショナリは開発者が名前をつけるから合計値がなんの合計値なのかがわかりやすくなる。  
 - 
 ## コード
-# BMIを出力
+#BMIを出力
 height = float(input("身長を入力してください(cm): "))  
 weight = float(input("体重を入力してください(kg): "))  
 
-height = height / 100  # cm → m  
+height = height / 100  #cm → m  
 BMI = weight / (height * height)  
 
 print(BMI)
