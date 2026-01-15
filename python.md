@@ -74,10 +74,7 @@ print(BMI)
  変数　= {値１、値２}
 
 
-graph TD
-    User -->|SSH| EC2
-    EC2 --> Internet
-
+Mermaid
   
    
 
