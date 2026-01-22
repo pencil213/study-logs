@@ -114,18 +114,18 @@ print(BMI)
 A_score = {"network"70,"datebase":60}  
 B_score = {"network":50,"datebase":70}  
 member_score = {"A":A_score,"B"B_score:}  
-print (A_score)  
-#松田と石の趣味の共通するものと松田の趣味を表示、ディクショナリの中にセットをネスト
-member_hobbies = {'松田':{'SNS','麻雀','自転車'},
-'石':{'麻雀','オセロ','自転車','数学','数学'}}
-#全員の趣味を表示
-print (member_hobbies)
+print (A_score)    
+#松田と石の趣味の共通するものと松田の趣味を表示、ディクショナリの中にセットをネスト  
+member_hobbies = {'松田':{'SNS','麻雀','自転車'},  
+'石':{'麻雀','オセロ','自転車','数学','数学'}}  
+#全員の趣味を表示  
+print (member_hobbies)  
 #松田と石の趣味を表示
-print(member_hobbies['松田'])  
-print(member_hobies['石'])#数学が一回しか表示されない。
-#共通する趣味だけ表示
-comonn_hobies =  member_hobbies['松田']  & member_hobbies['石']
-print = (comonn_hobies)
+print(member_hobbies['松田'])    
+print(member_hobies['石'])#数学が一回しか表示されない。  
+#共通する趣味だけ表示  
+comonn_hobies =  member_hobbies['松田']  & member_hobbies['石']  
+print = (comonn_hobies)  
 
 
 
