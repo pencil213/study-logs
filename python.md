@@ -142,16 +142,16 @@ print = (comonn_hobies)
 - 最初のif文の末尾に:をつけ忘れ
 ## コード
 - month.py
-- month = int(input('今は何月ですか（数字を入力） >> '))
+- month = int(input('今は何月ですか（数字を入力） >> '))  
 
-if month in [1, 3, 5, 7, 8, 10, 12]:
-    print('31日まであります')
-elif month != 2:
-    print('30日までです')
-else:
-    print('一年で一番寒い月ですね')
+if month in [1, 3, 5, 7, 8, 10, 12]:  
+    print('31日まであります')  
+elif month != 2:  
+    print('30日までです')  
+else:  
+    print('一年で一番寒い月ですね')  
 
-print('年が明けてから')
+print('年が明けてから')  
 print(f'{month}ヶ月が立ちました')
 
 
