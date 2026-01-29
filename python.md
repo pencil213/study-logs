@@ -161,16 +161,16 @@ print(f'{month}ヶ月が立ちました')
 - for文の基礎構造
 
 ## コード
-- **ユーザー数**
-  count = 0
-user_num = int(input('ユーザーの数を入力してください　>>'))
-time_list = list()
-while count < user_num:
- count += 1
- time = int(input(f'count人目の使用時間を入力してください'))
- time_list.append(time)
-print('time_list')
-total = sum(time_list)
+- **ユーザー達の使用時間を表示し、平均の使用時間を表示**  
+  count = 0  #カウンタ変数  
+user_num = int(input('ユーザーの数を入力してください　>>'))  
+time_list = list()  #からのリストを作成  
+while count < user_num:   
+ count += 1  
+ time = int(input(f'count人目の使用時間を入力してください'))  
+ time_list.append(time)  #リストにcount人目の使用時間を追加
+print('time_list')  
+total = sum(time_list)  #ユーザー達の合計使用時間  
 print(f'平均使用時間は{total/user_num}')
   
   
