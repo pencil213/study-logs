@@ -213,3 +213,5 @@ for data in ages:
         continue  
     samples.append(data)  
     print(samples)  
+
+
