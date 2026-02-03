@@ -3,3 +3,13 @@
 - touch
 - rm
 - rmdir
+## 使い方
+## 単体と複数のファイルを作成
+- touch newfile
+- touch file1 file2 file3
+
+## 単体と複数のファイルを消去
+- rm newfile
+- rm file1 file2 file3
+
+-
