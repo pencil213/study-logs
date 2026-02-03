@@ -1,1 +1,216 @@
+## python 学習ログ
+# 2025 12月29日
+- 四則演算の優先度を学んだ
+- printによって出力
+- 変数に代入してからの応用
+- input関数によりキーボードの情報を受け取り変数に代入
+- 関数の型は四つある
+
+感想：四則演算の優先度は算数と同じ感じだと思った。
+- パイソンは関数により多種多様な操作が可能なのだとわかった。
+- format関数によって文字列に数値を代入するのは面白いと思った。
+
+## 1/4
+
+- f-string を使った
+
+## コード
+
+- x = 5
+y = 7
+print(f"{x} + {y} = {x + y}"）
+- この変数をnameとかに変えて文を名前を入れた文なども作れる。
+  
+
+
+## 学んだこと
+- printの中に変数名を入れてそれに関連したものを出力したい場合文字列の前に f をつける
+
+
+## 1/5
+## 学んだ事
+- forma文やfstring文のデメリット
+
+  新しいのを追加したいときに変数を追加したり、すべて同じ処理したい場合文が長くなる。
+
+- 上のデメリットをマシにするためにコンテナがある（一個の変数に複数の単語を収納すること）
+
+  コンテナにはリスト、ディクショナリ、タプル、セットの4つがある
+
+- リストについて学んだ。
+- sum関数により変数の中の合計を出力。len関数により変数の中の数を出力。
+- スライスによる範囲指定print(変数名[?以上:?未満])?=数字。
+- 負数による指定print(変数名[-1])によりリストの末尾を出力。
+- リストは０から始まる逆からは−１から始まる。
+
+## コード
+scores=[80,70,4732]  
+total=sum(scores)  
+print(total)  
+total=sum(scores)/len(scores)  
+print(scores[-1])  
+print(scores[1:3])  
+
+## 1/8
+## 学んだこと
+- リストとディクショナリのちがいについて。  。
+リストは添字をpythonが自動につけるが、ディクショナリは開発者が名前をつけるから合計値がなんの合計値なのかがわかりやすくなる。  
+- タプルとセット
+タプルとリストはほぼ同じだが違うところがある。（タプルは要素の追加や変更削除ができない声質を持っている。）タプル=中身が変更できないリスト。
+- fdd
+## コード
+#BMIを出力
+height = float(input("身長を入力してください(cm): "))  
+weight = float(input("体重を入力してください(kg): "))  
+
+height = height / 100  #cm → m  
+BMI = weight / (height * height)  
+
+print(BMI)
+
+
+## 1/15
+- セットについて:順列を持たずその要素は重複しないため種類の管理に向いている。
+ 変数　= {値１、値２}
+- コンテナたちの別名
+  |コンテナ|別名|説明|
+  |---|---|---|
+  |リスト|配列|他の言語では配列と呼ばれることが多い|
+  |ディクショナリ|辞書|キーと値の対応表|
+  |セット|集合|順序がなく重複しない|
+  |タプル|-|なし|
+
+
+## 1/18
+## 
+
+## やったこと
+- `score.py` というPythonファイルを作成
+- ターミナルから python3 score.py を実行した
+
+## つまずいた点
+- command not found や No such file or directoryが出た
+- nano score.pyにいらないものを書いていた
+- ファイルが存在するディレクトリと、現在のディレクトリが一致していなかった
+
+## 学んだこと
+- ls でファイルの存在を確認できる
+- cd で実行したいディレクトリに移動する必要がある
+- .py ファイルは以下の形で実行する  
+  python3 ファイル名.py
+
+
+## 1/21　1/22
+## やったこと
+- コンテナの応用
+- ディクショナリの中にディクショナリをネスト
+- ディクショナリの中にセットをネスト
+- リストの中にリストを追加
+- 練習問題
+
+## 学んだこと
+## 使ったコード
+#A,Bのスコアを表示、ディクショナリの中にディクショナリをネスト
+A_score = {"network"70,"datebase":60}  
+B_score = {"network":50,"datebase":70}  
+member_score = {"A":A_score,"B"B_score:}  
+print (A_score)
+
+#ディクショナリの中にセットをネスト  
+#松田と石の趣味の共通するものと松田の趣味を表示、  
+member_hobbies = {'松田':{'SNS','麻雀','自転車'},  
+'石':{'麻雀','オセロ','自転車','数学','数学'}}   
+
+#全員の趣味を表示  
+print (member_hobbies)  
+
+#松田と石の趣味を表示
+print(member_hobbies['松田'])    
+print(member_hobies['石']) #数学が一回しか表示されない。   
+
+#共通する趣味だけ表示    
+comonn_hobies =  member_hobbies['松田']  & member_hobbies['石']    
+print = (comonn_hobies)    
+
+
+## 1/28
+## やったこと
+- 練習問題input関数とif文の活用
+- 条件分岐
+## エラー部分
+- インデントの深さだ違くエラー
+- 最初のif文の末尾に:をつけ忘れ
+## コード
+- month.py
+- month = int(input('今は何月ですか（数字を入力） >> '))  
+
+if month in [1, 3, 5, 7, 8, 10, 12]:  
+    print('31日まであります')  
+elif month != 2:  
+    print('30日までです')  
+else:  
+    print('一年で一番寒い月ですね')  
+
+print('年が明けてから')  
+print(f'{month}ヶ月が立ちました')
+
+
+## 1/29
+## やったこと
+- 繰り返しによるリスト作成
+
+## コード
+- **ユーザー達の使用時間を表示し、平均の使用時間を表示**  
+  count = 0  #カウンタ変数  
+user_num = int(input('ユーザーの数を入力してください　>>'))  
+time_list = list()  #からのリストを作成  
+while count < user_num:   
+ count += 1  
+ time = int(input(f'count人目の使用時間を入力してください'))  
+ time_list.append(time)  #リストにcount人目の使用時間を追加  
+print('time_list')  
+total = sum(time_list)  #ユーザー達の合計使用時間  
+print(f'平均使用時間は{total/user_num}')
+  
+
+## 1/30
+## やったこと
+- for文
+
+
+## コード
+## for文
+- for 変数　in リスト名
+- 目標に達したら繰り返しを終了する
+- 不要な回のループをスキップする
+  - scores = [60,50,40,75]  
+    total = 0  
+    for date in scores:  
+     if date >= 60:  
+      print ('合格')  
+     else:  
+      print('不合格')  
+     total = total + date  
+    heikin = total / len(scores)  
+    print (heikin)
+
+  - ages = [28,50,8,80,8,4,19,40]  `#対象データ`  
+    num = 5   `#目標の抽出数`  
+    samples = list()  `#サンプルファイルを格納する場所`  
+    for data in ages:  
+        if 20 <= date < 30:  
+            samples.append(data)  
+            if len(samples) == num:  
+                break  
+    print(samples)
+
+  - ages = [28,50,'ひみつ',20,10]  
+samples = list()  `#サンプルデータを格納するリスト`  
+for data in ages:  
+    if not isinstance(data,int):  `#整数でないデータ`  
+        continue  `#スキップ`  
+    if data < 20 or data>=30:  
+        continue  
+    samples.append(data)  
+    print(samples)  
 
