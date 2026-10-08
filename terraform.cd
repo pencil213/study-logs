@@ -1,1 +1,27 @@
+```
+terraformを使うファイルに移動
+cd "C:\Users\t_sato\OneDrive - ooharastudent\デスクトップ\trial"
+```
+```
+環境変数にアクセスキーを入れる
+$env:AWS_ACCESS_KEY_ID="自分のアクセスキーid"
+$env:AWS_SERCREET_KEY_ID="自分のシークレットアクセスキー"
+```
+```
+アクセスキーが入っているか確認
+write-Host"AWS_ACCESS_KEY_ID: $env:AWS_ACCESS_KEY_ID"
+```
+```
+terrafromの初期化
+terraform init
 
+terraformのコードを整理
+terraform fmt
+
+terrafromの設定が間違っていないか検証
+terraform validate
+
+awsに何が作られているか確認
+terraform plan
+errar ------ ソースが見つからないみたいなエラー
+理由:シークレットアクセスキーをアクセスキーのところに入れていた。
